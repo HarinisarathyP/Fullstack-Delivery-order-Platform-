@@ -19,8 +19,28 @@ The project serves as a comprehensive demonstration of integrating a TypeScript-
 ---
 
 ## ✨ Functions
-* **Story & Post Feed:** Users can view a dynamic main feed that includes simulated **Stories** and **Posts** fetched from a local JSON data source.
-* **Profile Navigation:** Clicking on the profile icon navigates the user to a dedicated profile page.
+* **Dynamic Restaurant Listing:**Displays a grid of available restaurants with ratings, offers, and delivery details.
+* **Filtering & Sorting:** Users can search for restaurants by name, cuisine, or dish, and sort the results by:
+
+
+
+Relevance
+
+
+
+Delivery Time
+
+
+
+Rating (Highest)
+
+
+
+Cost (Low to High)
+
+
+
+Rating Filter: Users can filter listings based on a minimum rating (e.g., 4.0+).
 * **User Customization:** Users are able to **change their profile name** and **update their profile picture** on the profile page, showcasing React's ability to manage dynamic user state.
 
 ---
