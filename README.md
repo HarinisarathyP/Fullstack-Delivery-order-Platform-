@@ -23,32 +23,27 @@ The project serves as a comprehensive demonstration of integrating a TypeScript-
 * **Filtering & Sorting:** Users can search for restaurants by name, cuisine, or dish, and sort the results by:1)Relevance  2) Delivery Time  3)Rating (Highest)
 4)Cost (Low to High)  5)Rating Filter
 * **Menu Viewing:** Clicking a restaurant card navigates to a dedicated menu page where dishes are grouped by category.
-* * **Visual Cart Counter:** When a menu item is clicked and added to the cart, the cart icon in the header dynamically updates to display the total item count.
+* **Visual Cart Counter:** When a menu item is clicked and added to the cart, the cart icon in the header dynamically updates to display the total item count.
 
 ---
 
 ## 💻 Tech Stack
 * This is a full-stack MERN-like application built on TypeScript.
 
-* **HTML & CSS:** The foundational languages for application structure and custom styling.
-* **Bootstrap:** Utilized for a responsive grid system and pre-styled components.
-* **Axios:** A promise-based HTTP client used for fetching data from the mock API.
-* **JSON:** Used as the local data source (`db.json`) to simulate a real-world API.
-* **React Router DOM:** Essential for handling client-side routing and navigation between views.
+* **Frontend:** 
+* **Framework:** React (with Vite)	Building the component-based Single Page Application (SPA).
+* **Language** TypeScript	Enhancing code quality and maintainability with static type checking.
+* **Routing** React Router DOM	Managing client-side navigation between pages (Home, Menu, Cart).
+* **State:** React Context / Hooks	Global state management for filtering and the visual cart counter.
+
+* **Backend & Database** 
+* **Server:** **Node.js / Express js**	Handling API routing and business logic.
+* **Database** **MongoDB**(via Mongoose)	Persistent data storage for restaurants and menus.
+* **Language** **TypeScript**	Type checking on the server-side logic.
+* **Deployment:** **Render**	Used for continuous deployment of both the Web Service (Backend) and Static Site (Frontend).
+* **Storage:**	**Cloudinary**	Used for hosting and serving optimized restaurant and dish images. make this good looking  with this context
 ---
-## 🚀 How to Run the Project (VS Code Terminal)
-To successfully run this project.
-These commands clone the repository and install all the required packages.
-```bash
-# Clone the repository
-git clone https://github.com/HarinisarathyP/Instagram_clone-using-react
-# Navigate into the main project folder
-cd Instagram
-# Install all main dependencies (from package.json)
-npm install
-# Install necessary utility packages for data fetching (Axios) and routing (React Router DOM)
-npm install axios
-npm install react-router-dom
+
 Terminal 1: Start the Mock API Server
 npx json-server --watch Instagram\db\db.json --port 3000
 # Navigate to the specific React app directory
