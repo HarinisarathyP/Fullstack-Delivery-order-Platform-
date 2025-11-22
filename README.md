@@ -44,9 +44,3 @@ The project serves as a comprehensive demonstration of integrating a TypeScript-
 * **Storage:**	**Cloudinary**	Used for hosting and serving optimized restaurant and dish images. make this good looking  with this context
 ---
 
-Terminal 1: Start the Mock API Server
-npx json-server --watch Instagram\db\db.json --port 3000
-# Navigate to the specific React app directory
-cd Instagram 
-# Start the React development server
-npm run dev
