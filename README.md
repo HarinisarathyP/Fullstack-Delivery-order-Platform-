@@ -20,19 +20,16 @@ The project serves as a comprehensive demonstration of integrating a TypeScript-
 
 ## ✨ Functions
 * **Dynamic Restaurant Listing:**Displays a grid of available restaurants with ratings, offers, and delivery details.
-* **Filtering & Sorting:** Users can search for restaurants by name, cuisine, or dish, and sort the results by:
-1)Relevance
-2) Delivery Time
-3)Rating (Highest)
-4)Cost (Low to High)
-5)Rating Filter
+* **Filtering & Sorting:** Users can search for restaurants by name, cuisine, or dish, and sort the results by:1)Relevance  2) Delivery Time  3)Rating (Highest)
+4)Cost (Low to High)  5)Rating Filter
 * **Menu Viewing:** Clicking a restaurant card navigates to a dedicated menu page where dishes are grouped by category.
 * * **Visual Cart Counter:** When a menu item is clicked and added to the cart, the cart icon in the header dynamically updates to display the total item count.
 
 ---
 
 ## 💻 Tech Stack
-* **React:** The main library for building the declarative UI.
+* This is a full-stack MERN-like application built on TypeScript.
+
 * **HTML & CSS:** The foundational languages for application structure and custom styling.
 * **Bootstrap:** Utilized for a responsive grid system and pre-styled components.
 * **Axios:** A promise-based HTTP client used for fetching data from the mock API.
