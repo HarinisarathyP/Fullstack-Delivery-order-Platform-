@@ -1,11 +1,11 @@
-# 📸 Instagram Clone
+# 🍔 QuickGrab: Modern Food Delivery Platform
 
 ---
 ## 🌐 Live Demo
 
 View the deployed version of the project here:
 
-[**https://instacloneusingreact.netlify.app/**](https://instacloneusingreact.netlify.app/)
+https://frontend-pe93.onrender.com/
 
 ***
 
