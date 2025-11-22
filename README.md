@@ -1,4 +1,4 @@
-# 🍔 QuickGrab: Modern Food Delivery Platform
+# 🍔 QuickGrab: Food Delivery Platform
 
 ---
 ## 🌐 Live Demo
@@ -21,27 +21,13 @@ The project serves as a comprehensive demonstration of integrating a TypeScript-
 ## ✨ Functions
 * **Dynamic Restaurant Listing:**Displays a grid of available restaurants with ratings, offers, and delivery details.
 * **Filtering & Sorting:** Users can search for restaurants by name, cuisine, or dish, and sort the results by:
-
-
-
-Relevance
-
-
-
-Delivery Time
-
-
-
-Rating (Highest)
-
-
-
-Cost (Low to High)
-
-
-
-Rating Filter: Users can filter listings based on a minimum rating (e.g., 4.0+).
-* **User Customization:** Users are able to **change their profile name** and **update their profile picture** on the profile page, showcasing React's ability to manage dynamic user state.
+1)Relevance
+2) Delivery Time
+3)Rating (Highest)
+4)Cost (Low to High)
+5)Rating Filter
+* **Menu Viewing:** Clicking a restaurant card navigates to a dedicated menu page where dishes are grouped by category.
+* * **Visual Cart Counter:** When a menu item is clicked and added to the cart, the cart icon in the header dynamically updates to display the total item count.
 
 ---
 
