@@ -11,9 +11,10 @@ https://frontend-pe93.onrender.com/
 
 ## 💡 About
 
-This project is a complete front-end **Instagram clone** built as a Single Page Application (SPA) using the **React** JavaScript library.
+QuickGrab is a full-stack, real-time food delivery application that replicates the core functionality and user experience of popular platforms like Swiggy or Zomato.
 
-The primary objective was to faithfully replicate the visual layout, navigation, and core user experience of Instagram. This serves as a practical demonstration of state management and component-based architecture in a modern web application.
+
+The project serves as a comprehensive demonstration of integrating a TypeScript-based React frontend with a TypeScript Node/Express API backed by a MongoDB database, including advanced features like Cloudinary image hosting, dynamic searching, and complex filtering.
 
 ---
 
