@@ -1,0 +1,56 @@
+/* src/components/styles/MiniCart.css */
+
+.mini-cart-container {
+    /* Layout: Ensures the icon and badge are positioned relative to this container */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 8px; /* Gives some space around the click area */
+    transition: opacity 0.2s;
+}
+
+.mini-cart-container:hover {
+    opacity: 0.8;
+}
+
+.cart-icon {
+    /* Basic styling for the icon itself */
+    font-size: 1.8em; /* Make the icon noticeable */
+    color: #333; /* Dark color */
+    line-height: 1; /* Ensures the icon aligns properly */
+}
+
+.cart-badge {
+    /* Badge positioning and styling */
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    
+    /* Visual appearance */
+    background-color: #ff6600; /* Foodiez primary color (same as 'ADD' button) */
+    color: white;
+    font-size: 0.7em;
+    font-weight: 700;
+    
+    /* Shape: circular padding and border-radius */
+    border-radius: 50%;
+    padding: 3px 6px;
+    min-width: 18px; /* Ensures minimum size for numbers > 9 */
+    height: 18px;
+    
+    /* Text alignment */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Optional: Small lift effect */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjustments for better placement if the icon is an emoji */
+.mini-cart-container .cart-icon {
+    /* If you use a simple emoji (like 🛒), these adjustments help center the badge */
+    margin-right: 5px; 
+}

@@ -1,0 +1,129 @@
+/* src/components/styles/Header.css */
+.app-header {
+    display: flex;
+    justify-content: space-between; /* Spreads the three main containers across the width */
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo-container {
+    flex-grow: 1;
+    /* CHANGE: Align the logo text to the right side of its container */
+    text-align: right-end; 
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 2.2em;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 0;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #cc3f4c;
+}
+
+/* src/components/styles/Header.css */
+/* ... (around line 43) ... */
+
+.location-container {
+    /* 🔑 MODIFIED: Removed border, background, and padding for a clean, simple look */
+    font-weight: 600; /* Increased weight for presence without a background */
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 2; /* Keeps it dominant in the center */
+    justify-content: center; /* Keeps it centered */
+    
+    /* Removed these for simplicity: */
+    /* padding: 5px 10px; */
+    /* border: 1px solid var(--border-color); */
+    /* border-radius: 20px; */
+    /* background-color: var(--bg-light); */
+    
+    min-width: 200px;
+    max-width: 40%;
+}
+
+/* ... (Rest of the CSS remains the same) ... */
+.user-actions {
+    flex-grow: 1;
+    /* CHANGE: Align the icons to the left side of its container */
+    text-align: left; 
+}
+
+.user-actions .icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.4em;
+    cursor: pointer;
+    /* CHANGE: Add spacing to the right of the icons */
+    margin-right: 15px; 
+    margin-left: 0; /* Resetting original margin */
+    color: var(--text-light);
+    transition: color 0.2s;
+}
+/* Optional: Remove the right margin from the last icon (👤) for perfect alignment */
+.user-actions .icon-btn:last-child {
+    margin-right: 0;
+}
+
+.user-actions .icon-btn:hover {
+    color: var(--primary-color);
+}
+/* src/components/styles/Header.css */
+/* ... (around line 90) ... */
+
+.user-actions .icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.4em;
+    cursor: pointer;
+    margin-left: 15px; 
+    margin-right: 0; 
+    color: var(--text-light);
+    transition: color 0.2s;
+    /* 🔑 CRITICAL FIX: The parent element must be relative for the badge to be absolute */
+    position: relative; 
+}
+/* ... (Existing styles for .user-actions .icon-btn) ... */
+
+/* 🔑 MODIFIED: Increased size and re-centered for a bigger look */
+.cart-badge {
+    position: absolute;
+    /* Adjusted positioning to center the larger badge on the corner */
+    top: -7px; 
+    right: -7px; 
+    
+    background-color: #ffd400; 
+    color: var(--secondary-color); 
+    
+    /* Increased font size slightly */
+    font-size: 0.7em; 
+    font-weight: 900; 
+    border-radius: 50%;
+    border: 2px solid white; 
+    
+    padding: 2px;
+    /* Increased minimum size from 16px to 18px */
+    min-width: 18px;
+    height: 18px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    z-index: 100; 
+}
+/* ... (Rest of the CSS remains the same) ... */

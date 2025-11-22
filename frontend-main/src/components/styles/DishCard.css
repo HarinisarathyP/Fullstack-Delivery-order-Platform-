@@ -1,0 +1,101 @@
+/* src/components/styles/DishCard.css */
+
+.dish-card {
+    /* Layout: Use flexbox to align the dish info on the left and the image/button on the right */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align content to the top */
+    padding: 16px 0;
+    border-bottom: 1px solid #eee; /* Subtle separator */
+    margin-bottom: 10px;
+    background-color: #fff; /* White background for the card */
+}
+
+.dish-card:last-child {
+    border-bottom: none; /* No border for the last item in the list */
+}
+
+.dish-info {
+    /* Info area takes most of the width */
+    flex-grow: 1;
+    padding-right: 20px;
+    max-width: 70%;
+}
+
+.veg-indicator {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid;
+    border-radius: 2px;
+    margin-right: 8px;
+    position: relative;
+    top: 2px;
+}
+
+.veg-indicator .dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.veg {
+    border-color: green;
+}
+.veg .dot {
+    background-color: green;
+}
+
+.non-veg {
+    border-color: red;
+}
+.non-veg .dot {
+    background-color: red;
+}
+
+
+.dish-name {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.dish-price {
+    font-size: 1em;
+    font-weight: 700;
+    color: #4CAF50; /* Green color for price */
+    margin-bottom: 8px;
+}
+
+.dish-description, .dish-spice-level {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.dish-actions {
+    /* Image and Button container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px; /* Fixed width for the action area */
+    position: relative;
+}
+
+.dish-image {
+    width: 100%;
+    height: 100px; /* Fixed height for consistent look */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-to

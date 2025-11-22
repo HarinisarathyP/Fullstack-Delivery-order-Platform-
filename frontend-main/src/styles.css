@@ -1,0 +1,77 @@
+/* src/styles.css (MODIFIED) */
+:root {
+  /* Color Palette (Inspired by Zomato/Swiggy) */
+  --primary-color: #ef4f5f; /* Main Brand Red/Pink */
+  --secondary-color: #282c3f; /* Dark Text/Primary Text */
+  --text-light: #686b78; /* Secondary/Muted Text */
+  --bg-light: #f7f7f7; /* Light Background */
+  --border-color: #e0e0e0; /* Light Border/Divider */
+  --rating-high: #48c479; /* Green for High Rating */
+  --shimmer-color: rgba(255, 255, 255, 0.5); /* For loader animation */
+}
+
+/* Reset and Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base Body Styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--secondary-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Main Layout Container */
+.main-content-area {
+    /* 🎯 FIX 1: Reduce top margin from 20px to 10px */
+    max-width: 1200px;
+    margin: 10px auto; 
+    padding: 0 15px;
+}
+
+/* Listing Section Styles */
+.listing-section {
+    /* 🎯 FIX 3: Reduce top padding from 20px to 10px */
+    padding-top: 10px;
+}
+
+.results-count-title {
+    /* 🎯 FIX: Reduce margin-bottom from 20px to 10px */
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px; 
+    text-align: left;
+}
+
+/* Grid for Restaurant Cards */
+.restaurant-grid {
+    display: grid;
+    /* Responsive grid: 300px min width, fills remaining space */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* States for No Results / Error */
+.no-results-message, .error-message {
+    font-size: 1.2em;
+    color: var(--text-light);
+    text-align: center;
+    padding: 50px 0;
+    border: 1px solid var(--border-color);
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+    .restaurant-grid {
+        /* Single column on smaller screens */
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,167 @@
+/* src/components/styles/RestaurantCard.css */
+.restaurant-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 2; 
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offer-badge, .promoted-badge {
+    position: absolute;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.offer-badge {
+    bottom: 10px;
+    left: 10px;
+    background-color: var(--primary-color);
+}
+
+.promoted-badge {
+    top: 10px; 
+    right: 10px;
+    background-color: #333;
+}
+
+.card-details {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.title-row h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%; 
+}
+
+.rating-badge {
+    background-color: #ccc;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.rating-badge.high-rating {
+    background-color: var(--rating-high);
+}
+
+.cuisine-info {
+    font-size: 0.9em;
+    color: var(--text-light);
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.delivery-info-row {
+    display: flex;
+    font-size: 0.85em;
+    color: var(--secondary-color);
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border-color);
+    justify-content: space-between;
+}
+
+/* 🎯 FIX: Remove blue underline and ensure proper layout for the Link/a tag */
+.card-details a {
+    text-decoration: none; /* Removes the blue underline */
+    color: inherit; /* Inherits color, preventing the default blue text */
+    display: block; /* Makes the link fill the width correctly for the button */
+}
+
+/* -------------------------------------- */
+/* --- NEW STYLES: Dual Button Layout --- */
+/* -------------------------------------- */
+
+.card-actions {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 15px;
+}
+
+/* Ensures both Link/Button take equal width */
+.card-actions a, .card-actions button {
+    flex: 1; 
+    text-decoration: none;
+    margin-top: 0; /* Override any existing button margins */
+}
+
+.view-menu-btn {
+    /* Existing style, now applied within the flex item */
+    display: block;
+    width: 100%; /* Important for fill */
+    padding: 10px 15px;
+    /* Removed margin-top as it's handled by card-actions */
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.view-menu-btn:hover {
+    background-color: #e04555;
+}
+
+.add-to-cart-btn {
+    display: block;
+    width: 100%; /* Important for fill */
+    padding: 10px 15px;
+    background-color: var(--rating-high); /* Using a high-rating green for 'ADD' */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #3aa866; 
+}

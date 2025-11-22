@@ -1,0 +1,27 @@
+// food-api/tsconfig.json
+{
+  "compilerOptions": {
+    // 1. Module and Target (Standard Node.js settings)
+    "target": "es2020",
+    "module": "commonjs",
+    "esModuleInterop": true,
+
+    // 2. Directory Settings (Must be uncommented and correct)
+    "rootDir": "./src", 
+    "outDir": "./dist",
+    "sourceMap": true,
+
+    // 3. Strictness and Casing
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    // 4. Node.js specific type resolution
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  
+  // 5. Files to include in the compilation process
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
